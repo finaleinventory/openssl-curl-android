@@ -16,8 +16,6 @@ ARGUMENTS=" \
     --without-libpsl \
     --disable-ldap \
     --disable-ldaps \
-    --without-brotli \
-    --without-zstd \
     --disable-rtsp \
     --disable-dict \
     --disable-telnet \
@@ -29,9 +27,6 @@ ARGUMENTS=" \
     --disable-gopher \
     --disable-manual \
     --disable-docs \
-    --without-ca-bundle \
-    --without-ca-path \
-    --disable-ipv6 \
     "
 
 mkdir -p build/curl
