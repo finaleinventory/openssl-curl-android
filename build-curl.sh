@@ -12,7 +12,26 @@ export TOOLCHAIN=$NDK/toolchains/llvm/prebuilt/$HOST_TAG
 # disable functionalities here to reduce size
 ARGUMENTS=" \
     --with-pic \
-    --disable-shared
+    --disable-shared \
+    --without-libpsl \
+    --disable-ldap \
+    --disable-ldaps \
+    --without-brotli \
+    --without-zstd \
+    --disable-rtsp \
+    --disable-dict \
+    --disable-telnet \
+    --disable-tftp \
+    --disable-pop3 \
+    --disable-imap \
+    --disable-smb \
+    --disable-smtp \
+    --disable-gopher \
+    --disable-manual \
+    --disable-docs \
+    --without-ca-bundle \
+    --without-ca-path \
+    --disable-ipv6 \
     "
 
 mkdir -p build/curl
